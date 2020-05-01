@@ -127,6 +127,10 @@ p{
   margin: 0;
 }
 
+a:hover:before {
+  display : none;
+}
+
 .boxlink{
   background: #fff;
   font-family: 'lanord-semilight', sans-serif;
