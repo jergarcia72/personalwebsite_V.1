@@ -122,7 +122,7 @@ body{
 p{
   font-family: 'lanord-semilight', sans-serif;
   font-size: 36px;
-  line-height: normal;
+  line-height: 1.2;
   color: var(--main-color);
   margin: 0;
 }
@@ -141,7 +141,6 @@ a:hover:before {
   text-decoration: none;
   padding: 1px 8px 1px 8px;
   border-radius: 36px;
- 
 }
 
 .boxlink:hover{
@@ -149,7 +148,7 @@ a:hover:before {
   text-decoration: none;
   color: #FFFFFF;
   border-color: #0000EE;
-  
+  box-shadow: 0px 0px 6px 0px #0000EE;
 }
 
 .boxlink:active{
@@ -159,22 +158,6 @@ a:hover:before {
   border-color: #0000EE;
   padding: 1px 8px 1px 8px;
 }
-
-/* footer 
-
-footer {
-  position: sticky; 
-  bottom: 0px;
-  height: 50px;
-  align-self: end;
-}
-
-#right{
-  float: right;
-  margin-top: -10px;
-  margin-right: 0px;
-}
-*/
 
 /* home */
 
@@ -245,7 +228,33 @@ footer {
   top: 0; bottom: 0; left: 0; right: 0;
   z-index: -1;
   background: url(../assets/home/portrait.png);
-  /* (IF YOU WANT IT TO SPAN THE WHOLE DEAL background-size: 100% 100%; */
+}
+
+.branding:hover:before{
+  content: '';
+  position: fixed;
+  display: block;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: -1;
+  background: url(../assets/gif/kimmykonglarge.gif);
+}
+
+.digital:hover:before{
+  content: '';
+  position: fixed;
+  display: block;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: -1;
+  background: url(../assets/gif/kimmykonglarge.gif);
+}
+
+.motion:hover:before{
+  content: '';
+  position: fixed;
+  display: block;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: -1;
+  background: url(../assets/gif/kimmykonglarge.gif);
 }
 
 .sva:hover:before{
@@ -264,36 +273,18 @@ footer {
   display: block;
   top: 0; bottom: 0; left: 0; right: 0;
   z-index: -1;
-  background: url(../assets/home/email.png);
-  /* (IF YOU WANT IT TO SPAN THE WHOLE DEAL background-size: 100% 100%; */
+  background: url(../assets/home/email.gif);
 }
 
-
-.special1:hover:before{
+.insta:hover:before{
   content: '';
   position: fixed;
   display: block;
   top: 0; bottom: 0; left: 0; right: 0;
   z-index: -1;
-  background: url(../assets/gif/kimmykonglarge.gif);
-}
-
-.special2:hover:before{
-  content: '';
-  position: fixed;
-  display: block;
-  top: 0; bottom: 0; left: 0; right: 0;
-  z-index: -1;
-  background: url(../assets/gif/Snakeillo.gif);
-}
-
-.special3:hover:before{
-  content: '';
-  position: fixed;
-  display: block;
-  top: 0; bottom: 0; left: 0; right: 0;
-  z-index: -1;
-  background: url(../assets/gif/kimmykonglarge.gif);
+  background: url(../assets/home/insta.gif);
+  background-repeat:no-repeat;
+  background-position: center center;
 }
 
 /* illo */
@@ -363,5 +354,3 @@ figure{
   margin-right: 10px;
 
 }
-
-/* visual */
