@@ -241,9 +241,7 @@ figure{
 
 /* -------------------MOBILE STUFF--------------------------- */
 @media screen and (max-width: 600px) {
-  .grab{
-
-  }
+  
   body {
     margin-top: 0px;
   }
