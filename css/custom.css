@@ -12,10 +12,16 @@ html {
     url('assets/lanord/LaNord-SemiLight.woff') format('woff');
 }
 
+/* I only use one color to accent everything and this is it*/
 :root {
-  --main-color: #0E0E0E;
+  --main-color: #0000EE;
 }
 
+/* The Grid */
+.three-eleven{
+  grid-column-start: 3;
+  grid-column-end:11;
+}
 
 body{
   height: 100vh;
@@ -31,100 +37,20 @@ body{
   grid-column-gap: 20px;
   grid-template-rows: auto auto;
 }
-/*
-.one-two{
-  grid-column-start: 1;
-  grid-column-end:2;
 
-}
-
-.one-thirteen{
-  grid-column-start: 1;
-  grid-column-end:13;
-}
-
-.two-ten{
-  grid-column-start: 2;
-  grid-column-end: 10;
-}
-
-.two-four{
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-auto-flow: column;
-}
-
-.two-five{
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-auto-flow: column;
-}
-
-.two-six{
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-auto-flow: column;
-}
-
-.two-twelve{
-  grid-column-start: 2;
-  grid-column-end: 12;
-  margin-left: -5px;
-}
-*/
-.three-eleven{
-  grid-column-start: 3;
-  grid-column-end:11;
-}
-/*
-.two-eight{
-  grid-column-start: 2;
-  grid-column-end: 8;
-}
-
-.four-five{
-  grid-column-start: 4;
-  grid-column-end: 5;
-}
-.four-six{
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-auto-flow: column;
-}
-
-.four-ten{
-  grid-column-start: 4;
-  grid-column-end: 10;
-}
-
-.five-eight{
-  grid-column-start: 5;
-  grid-column-end: 8;
-  grid-auto-flow: column;
-}
-
-.six-seven{
-  grid-column-start: 6;
-  grid-column-end: 7;
-}
-.six-eight{
-  grid-column-start: 6;
-  grid-column-end: 8;
-  grid-auto-flow: column;
-}
-.eight-twelve{
-  grid-column-start: 8;
-  grid-column-end: 12;
-  grid-auto-flow: column;
-  margin-top: 1.5%;
-}
-*/
-p{
+h1 {
   font-family: 'lanord-semilight', sans-serif;
   font-size: 36px;
   line-height: 1.2;
-  color: var(--main-color);
+  font-weight:normal;
   margin: 0;
+}
+
+p {
+  margin: 0;
+  font-family: 'lanord-semilight', sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 a:hover:before {
@@ -135,7 +61,7 @@ a:hover:before {
   background: #fff;
   font-family: 'lanord-semilight', sans-serif;
   font-size: 36px;
-  color: #0000EE;
+  color: var(--main-color);
   border-style: solid;
   border-width: 2px;
   text-decoration: none;
@@ -144,18 +70,18 @@ a:hover:before {
 }
 
 .boxlink:hover{
-  background-color: #0000EE;
+  background-color: var(--main-color);
   text-decoration: none;
   color: #FFFFFF;
-  border-color: #0000EE;
-  box-shadow: 0px 0px 6px 0px #0000EE;
+  border-color: var(--main-color);
+  box-shadow: 0px 0px 6px 0px var(--main-color);
 }
 
 .boxlink:active{
-  background-color: rgba(0, 0, 238, 0.288);
+  background-color: rgba(0, 0, 238, 0.5);
   text-decoration: none;
   color: #FFFFFF;
-  border-color: #0000EE;
+  border-color: var(--main-color);
   padding: 1px 8px 1px 8px;
 }
 
@@ -168,58 +94,6 @@ a:hover:before {
 .grab:active {
   cursor: -webkit-grabbing; cursor: grabbing;
 }
-
-@media screen and (max-width: 600px) {
-  .grab{
-
-  }
-  body {
-    margin-top: 0px;
-  }
-  main{
-    padding: 5vw;
-  }
-  .three-eleven{
-    grid-column-start: 1;
-    grid-column-end:13;
-  }
-  footer{
-    background-color: #FFF;
-    box-shadow: 0px -1px 5px -2px rgba(43,43,43,1);
-    padding-top: 2vh;
-  }
-  p{
-    font-size: 36px;
-  }
-  .m-hidden{
-    display: none;
-  }
-}
-
-/* case study
-
-.casestudiesbox{
-  display: block;
-  line-height: 120%;
-  padding: 15px 15px;
-  margin-bottom: 15px;
-}
-
-.casestudiesbox:hover, .casestudiesbox:active{
-  background-color: #FFF;
-  color: var(--main-color);
-  padding: 15px 15px; 
-}
-
-.caption{
-  font-size: 14px;
-  
-} 
-
-#disabled{
-  color: rgb(175, 175, 175);
-}
- */
 
 .jeremy:hover:before{
   content: '';
@@ -286,6 +160,14 @@ a:hover:before {
   background-repeat:no-repeat;
   background-position: center center;
 }
+
+/* projects */
+section{
+  margin-top: 64px;
+}
+
+
+
 
 /* illo */
 figure{
@@ -354,3 +236,121 @@ figure{
   margin-right: 10px;
 
 }
+
+
+
+/* -------------------MOBILE STUFF--------------------------- */
+@media screen and (max-width: 600px) {
+  .grab{
+
+  }
+  body {
+    margin-top: 0px;
+  }
+  main{
+    padding: 5vw;
+  }
+  .three-eleven{
+    grid-column-start: 1;
+    grid-column-end:13;
+  }
+  footer{
+    background-color: #FFF;
+    box-shadow: 0px -1px 5px -2px rgba(43,43,43,1);
+    padding-top: 2vh;
+  }
+  p{
+    font-size: 36px;
+  }
+  .m-hidden{
+    display: none;
+  }
+}
+
+
+/*
+.one-two{
+  grid-column-start: 1;
+  grid-column-end:2;
+
+}
+
+.one-thirteen{
+  grid-column-start: 1;
+  grid-column-end:13;
+}
+
+.two-ten{
+  grid-column-start: 2;
+  grid-column-end: 10;
+}
+
+.two-four{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-auto-flow: column;
+}
+
+.two-five{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-auto-flow: column;
+}
+
+.two-six{
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-auto-flow: column;
+}
+
+.two-twelve{
+  grid-column-start: 2;
+  grid-column-end: 12;
+  margin-left: -5px;
+}
+*/
+
+
+/*
+.two-eight{
+  grid-column-start: 2;
+  grid-column-end: 8;
+}
+
+.four-five{
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.four-six{
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-auto-flow: column;
+}
+
+.four-ten{
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.five-eight{
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-auto-flow: column;
+}
+
+.six-seven{
+  grid-column-start: 6;
+  grid-column-end: 7;
+}
+.six-eight{
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-auto-flow: column;
+}
+.eight-twelve{
+  grid-column-start: 8;
+  grid-column-end: 12;
+  grid-auto-flow: column;
+  margin-top: 1.5%;
+}
+*/
