@@ -16,27 +16,36 @@
 
 
 <body class="grab">
-  <main class="three-eleven">
-    <h1>
-      This is Jeremy Garcia’s Homepage.
-      <span class="jeremy"><a class="boxlink" href="#">Jeremy</a></span>
-      is a graphics designer in New York City that likes interacting with and designing for the world wide web.
-      He is deeply interested in working with
-      <span class="branding"><a class="boxlink" href="branding.html">branding</a></span>,
-      <span class="digital"><a class="boxlink" href="#">digital&nbsp;products</a></span>
-      and
-      <span class="motion"><a class="boxlink" href="#">motion&nbsp;work</a></span>.
-      To see the most current things he is working on, head to his
-      <span class="insta"><a class="boxlink" href="https://www.instagram.com/jeremyisonline/?hl=en" target="_blank" target="_blank">instagram</a></span>.
-      As a recent graduate from
-      <span class="sva"><a class="boxlink" href="https://design.sva.edu/">SVA&nbsp;MFAD</a></span>,
-      he is currently looking for full-time opportunities, freelance work or collaborative projects. Contact him 
-      via <span class="email"><a class="boxlink" href="mailto:contact@jergarcia.com">email</a></span>.
-      <br>
-      Updated: 07 April 2020.
-    </h1>
-    
-  </main>
+  <video id="insta-video" class="video" muted autoplay loop>
+    <source src="assets/home/insta.mp4" type="video/mp4">
+  </video>
+  <video id="email-video" class="video" muted autoplay loop>
+    <source src="assets/home/email.mp4" type="video/mp4">
+  </video>
+  <div class="grid-container">
+    <main class="three-eleven">
+      <h1>
+        This is Jeremy Garcia’s Homepage.
+        <span class="jeremy"><a class="boxlink" href="#">Jeremy</a></span>
+        is a graphics designer in New York City that likes interacting with and designing for the world wide web.
+        He is deeply interested in working with
+        <span class="branding"><a class="boxlink" href="branding.html">branding</a></span>,
+        <span class="digital"><a class="boxlink" href="#">digital&nbsp;products</a></span>
+        and
+        <span class="motion"><a class="boxlink" href="#">motion&nbsp;work</a></span>.
+        To see the most current things he is working on, head to his
+        <span class="insta"><a class="boxlink" href="https://www.instagram.com/jeremyisonline/?hl=en" target="_blank"
+            target="_blank">instagram</a></span>.
+        As a recent graduate from
+        <span class="sva"><a class="boxlink" href="https://design.sva.edu/">SVA&nbsp;MFAD</a></span>,
+        he is currently looking for full-time opportunities, freelance work or collaborative projects. Contact him
+        via <span class="email"><a class="boxlink" href="mailto:contact@jergarcia.com">email</a></span>.
+        <br>
+        Updated: 07 April 2020.
+      </h1>
+
+    </main>
+  </div>
 </body>
 
 
@@ -56,6 +65,32 @@
 
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async></script>
+<script>
+  var instaVidHtml = document.querySelector("#insta-video");
+  var emailVidHtml = document.querySelector("#email-video");
+  // var videoAssets = ['assets/home/insta.mp4', 'assets/home/email.mp4'];
+
+  var instaHTML = document.querySelector('.insta');
+  var emailHTML = document.querySelector('.email');
+
+  instaHTML.addEventListener("mouseenter", function (event) {
+    instaVidHtml.style.opacity = 1;
+  });
+
+  instaHTML.addEventListener("mouseout", function (event) {
+    instaVidHtml.style.opacity = 0;
+  });
+
+  emailHTML.addEventListener("mouseenter", function (event) {
+    emailVidHtml.style.opacity = 1;
+  });
+
+  emailHTML.addEventListener("mouseout", function (event) {
+    emailVidHtml.style.opacity = 0;
+  });
+
+
+</script>
 </body>
 
 </html>
