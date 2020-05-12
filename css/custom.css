@@ -5,7 +5,7 @@ html {
 }
 
 @font-face {
-  font-family: lanord-semilight;
+  font-family: 'lanord-semilight';
   src: url('assets/lanord/LaNord-SemiLight.eot');
   src: url('assets/lanord/LaNord-SemiLight.eot?#iefix') format('embedded-opentype'),
     url('assets/lanord/LaNord-SemiLight.woff2') format('woff2'), 
@@ -112,11 +112,13 @@ a:hover:before {
 
 .jeremy:hover:before{
   content: '';
-  position: fixed;
-  display: block;
-  top: 0; bottom: 0; left: 0; right: 0;
+  height:100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0; right: 0; 
   z-index: -1;
-  background: url(../assets/home/portrait.png);
+  background: url(../assets/home/portrait.png) no-repeat center center fixed;
 }
 
 .branding:hover:before{

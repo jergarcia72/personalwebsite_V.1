@@ -22,6 +22,8 @@
   <video id="email-video" class="video" muted autoplay loop>
     <source src="assets/home/email.mp4" type="video/mp4">
   </video>
+
+  
   <div class="grid-container">
     <main class="three-eleven">
       <h1>
@@ -46,51 +48,24 @@
 
     </main>
   </div>
-</body>
-
-
-<script src="js/vendor/modernizr-3.7.1.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
-<script src="js/p5.dom.js"></script>
-<!-- This is what is making my site so scratchy. I originally saw it at https://glitch.com/@CharStiles and thought it was amazing!  -->
-<script src="js/scratch.js"></script>
-
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-
-</script>
+  
+  
+  <!-- This is what is making my site so scratchy. 
+    I originally saw it at https://glitch.com/@CharStiles and thought it was amazing!  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="js/p5.dom.js"></script>
+    <script src="js/scratch.js"></script>
+    
+    <!-- My other JavaScript Stuff -->
+    <script src="js/linkhover.js"></script>
+    
+    
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
 <script src="https://www.google-analytics.com/analytics.js" async></script>
-<script>
-  var instaVidHtml = document.querySelector("#insta-video");
-  var emailVidHtml = document.querySelector("#email-video");
-  // var videoAssets = ['assets/home/insta.mp4', 'assets/home/email.mp4'];
 
-  var instaHTML = document.querySelector('.insta');
-  var emailHTML = document.querySelector('.email');
-
-  instaHTML.addEventListener("mouseenter", function (event) {
-    instaVidHtml.style.opacity = 1;
-  });
-
-  instaHTML.addEventListener("mouseout", function (event) {
-    instaVidHtml.style.opacity = 0;
-  });
-
-  emailHTML.addEventListener("mouseenter", function (event) {
-    emailVidHtml.style.opacity = 1;
-  });
-
-  emailHTML.addEventListener("mouseout", function (event) {
-    emailVidHtml.style.opacity = 0;
-  });
-
-
-</script>
 </body>
-
 </html>
