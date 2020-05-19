@@ -12,7 +12,9 @@ html {
     url('assets/lanord/LaNord-SemiLight.woff') format('woff');
 }
 
-/* I only use one color to accent everything and this is it*/
+
+
+/* the only color used */
 :root {
   --main-color: #0000EE;
 }
@@ -39,20 +41,25 @@ video.video {
   opacity:0;
 }
 
+
+
+/* the grid */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 20px;
-  grid-template-rows: auto auto;
+  /* grid-template-rows: auto auto; */
 }
 
-/* The Grid */
 .three-eleven{
   margin-top: 40px;
   grid-column-start: 3;
   grid-column-end:11;
 }
 
+
+
+/* universal tags */
 h1 {
   font-family: 'lanord-semilight', sans-serif;
   font-size: 36px;
@@ -64,8 +71,7 @@ h1 {
 p {
   margin: 0;
   font-family: 'lanord-semilight', sans-serif;
-  font-size: 24px;
-  line-height: 1.2;
+  font-size: 18px;
 }
 
 a:hover:before {
@@ -99,6 +105,8 @@ a:hover:before {
   border-color: var(--main-color);
   padding: 1px 8px 1px 8px;
 }
+
+
 
 /* home */
 
@@ -179,8 +187,18 @@ a:hover:before {
 }
 
 /* projects */
+.stick{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 section{
   margin-top: 60px;
+  
+  outline: 1px solid red;
+  
 }
 
 img{
@@ -189,15 +207,19 @@ img{
   cursor: auto;
 }
 
-.gallery{
+.gallery-container{
   margin: 5px 0 10px 0;
   position: relative;
+  overflow: hidden;
+}
 
+.gallery-slide{
+  display: flex;
+  width: 100%;
 }
 
 .next{
   position: absolute;
-  background-color:rgba(255, 0, 0, 0.247);
   height: 99%;
   width: 30%;
   top: 0px;
@@ -207,12 +229,33 @@ img{
 
 .prev{
   position: absolute;
-  background-color:rgba(255, 0, 0, 0.247);
   height: 99%;
   width: 30%;
   top: 0px;
   left: 0px; 
   cursor: url(../assets/prev.png), pointer;
+}
+
+.description{
+  position: relative;
+  height: 100%;
+  
+}
+
+.description1{
+  position: absolute;
+  top: 0px;
+  left: 0px; 
+  width: 70%;
+}
+
+.description2{
+  position: absolute;
+  width: 25%;
+  top: 0px;
+  right: 0;
+  text-align: right;
+  
 }
 
 /* about */
@@ -241,91 +284,3 @@ img{
     display: none;
   }
 }
-
-
-/*
-.one-two{
-  grid-column-start: 1;
-  grid-column-end:2;
-
-}
-
-.one-thirteen{
-  grid-column-start: 1;
-  grid-column-end:13;
-}
-
-.two-ten{
-  grid-column-start: 2;
-  grid-column-end: 10;
-}
-
-.two-four{
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-auto-flow: column;
-}
-
-.two-five{
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-auto-flow: column;
-}
-
-.two-six{
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-auto-flow: column;
-}
-
-.two-twelve{
-  grid-column-start: 2;
-  grid-column-end: 12;
-  margin-left: -5px;
-}
-*/
-
-
-/*
-.two-eight{
-  grid-column-start: 2;
-  grid-column-end: 8;
-}
-
-.four-five{
-  grid-column-start: 4;
-  grid-column-end: 5;
-}
-.four-six{
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-auto-flow: column;
-}
-
-.four-ten{
-  grid-column-start: 4;
-  grid-column-end: 10;
-}
-
-.five-eight{
-  grid-column-start: 5;
-  grid-column-end: 8;
-  grid-auto-flow: column;
-}
-
-.six-seven{
-  grid-column-start: 6;
-  grid-column-end: 7;
-}
-.six-eight{
-  grid-column-start: 6;
-  grid-column-end: 8;
-  grid-auto-flow: column;
-}
-.eight-twelve{
-  grid-column-start: 8;
-  grid-column-end: 12;
-  grid-auto-flow: column;
-  margin-top: 1.5%;
-}
-*/

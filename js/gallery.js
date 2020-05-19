@@ -1,44 +1,41 @@
-//Data for holding which page we're on
-let slideNumber = 1
+const gallerySlide = document.querySelector('.gallery-slide');
+const galleryImages = document.querySelectorAll('.gallery-slide img');
 
-//pick the relevant tags
-const nextTag = document.querySelector(".next")
-const prevTag = document.querySelector(".prev")
-const outputTag = document.querySelector(".counter")
+//nav
+const nextTag = document.querySelector(".next");
+const prevTag = document.querySelector(".prev");
 
-//make a next function to increase the pageNumber
-const next = function () {
-    slideNumber = slideNumber + 1
+//counter
+let counter = 1;
+const size = galleryImages[0].clientWidth;
 
-    if (slideNumber > 4) {
-        slideNumber = 1
+gallerySlide.style.transform = 'translateX(' + (-size * counter )+ 'px)';
+
+//nav listeners
+
+nextTag.addEventListener('click', () => {
+    if (counter >= galleryImages.length - 1) return;
+    gallerySlide.style.transition = "transform 0.4s ease-in-out";
+    counter++;
+    gallerySlide.style.transform = 'translateX(' + (-size * counter )+ 'px)';
+});
+
+prevTag.addEventListener('click', ()=>{
+    if(counter <= 0) return;
+    gallerySlide.style.transition = "transform 0.4s ease-in-out";
+    counter--;
+    gallerySlide.style.transform = 'translateX(' + (-size * counter )+ 'px)';
+});
+
+gallerySlide.addEventListener('transitionend', ()=>{
+    if (galleryImages[counter].id === 'lastClone'){
+        gallerySlide.style.transition = "none";
+        counter = galleryImages.length - 2;
+        gallerySlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
-    updateSection()
-}
-
-//make a prev function to decrease the pageNumber
-const previous = function () {
-    slideNumber = slideNumber - 1
-
-    if (slideNumber < 1) {
-        slideNumber = 4
+    if (galleryImages[counter].id === 'firstClone'){
+        gallerySlide.style.transition = "none";
+        counter = galleryImages.length - counter;
+        gallerySlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
-    updateSection()
-}
-
-//updates content
-const updateSection = function () {
-    outputTag.innerHTML = slideNumber
-}
-
-//listener functions
-nextTag.addEventListener("click", function() {
-    next()
-})
-
-prevTag.addEventListener("click", function() {
-    previous()
-})
-
-
-
+});
