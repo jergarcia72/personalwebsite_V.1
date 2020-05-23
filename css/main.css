@@ -25,18 +25,23 @@ body{
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
   min-height: 100vh;
+  background-color: #f2f2f2;
 
 }
 
 .main-container{
-  margin:40px 16% 0 16%;
+  margin:0 20% 0 20%;
 }
 
 /* If Mobile we want to change styles */
 @media only screen and (max-width: 600px) {
   .main-container{
-    margin:40px 20px 0 20px;
+    margin:0px 20px 0 20px;
   }
+}
+
+.content-container{
+  margin-top: 40px;
 }
 
 .section-container{
@@ -74,7 +79,7 @@ a:hover:before {
 }
 
 .boxlink{
-  background: #fff;
+  background: #f2f2f2;
   font-family: 'lanord-semilight', sans-serif;
   font-size: 36px;
   color: var(--main-color);
@@ -83,22 +88,27 @@ a:hover:before {
   text-decoration: none;
   padding: 1px 8px 1px 8px;
   border-radius: 36px;
+  transition: all .25s;
+  transition-timing-function: ease-out;
 }
 
 .boxlink:hover{
   background-color: var(--main-color);
   text-decoration: none;
-  color: #FFFFFF;
+  color: #f2f2f2;
   border-color: var(--main-color);
-  box-shadow: 0px 0px 6px 0px var(--main-color);
+  transition: all .15s;
+  transition-timing-function: ease-out;
+  
 }
 
 .boxlink:active{
   background-color: rgba(0, 0, 238, 0.5);
   text-decoration: none;
-  color: #FFFFFF;
+  color: #f2f2f2;
   border-color: var(--main-color);
   padding: 1px 8px 1px 8px;
+  
 }
 
 /* home */
@@ -109,74 +119,6 @@ a:hover:before {
 
 .grab:active {
   cursor: -webkit-grabbing; cursor: grabbing;
-}
-
-.jeremy:hover:before{
-  content: '';
-  height:100vh;
-  width: 100vw;
-  object-fit: cover;
-  position: absolute;
-  bottom: 0; right: 0; 
-  z-index: -1;
-  background: url(../assets/home/portrait.png) no-repeat center center fixed;
-}
-
-.branding:hover:before{
-  content: '';
-  position: fixed;
-  display: block;
-  top: 0; bottom: 0; left: 0; right: 0;
-  z-index: -1;
-  background: url(../assets/gif/kimmykonglarge.gif);
-}
-
-.digital:hover:before{
-  content: '';
-  position: fixed;
-  display: block;
-  top: 0; bottom: 0; left: 0; right: 0;
-  z-index: -1;
-  background: url(../assets/gif/kimmykonglarge.gif);
-}
-
-.motion:hover:before{
-  content: '';
-  position: fixed;
-  display: block;
-  top: 0; bottom: 0; left: 0; right: 0;
-  z-index: -1;
-  background: url(../assets/gif/kimmykonglarge.gif);
-}
-
-.sva:hover:before{
-  content: '';
-  position: fixed;
-  display: block;
-  top: 0; bottom: 0; left: 0; right: 0;
-  z-index: -1;
-  background: url(../assets/home/sva-logo.png);
-  background-size: auto auto;
-}
-
-.email:hover:before{
-  content: '';
-  position: fixed;
-  display: block;
-  top: 0; bottom: 0; left: 0; right: 0;
-  z-index: -1;
-  background: url(../assets/home/email.gif);
-}
-
-.insta:hover:before{
-  content: '';
-  position: fixed;
-  display: block;
-  top: 0; bottom: 0; left: 0; right: 0;
-  z-index: -1;
-  background: url(../assets/home/insta.MOV);
-  background-repeat:no-repeat;
-  background-position: center center;
 }
 
 
