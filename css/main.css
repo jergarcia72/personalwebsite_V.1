@@ -1,6 +1,3 @@
-
-/* general */
-
 @font-face {
   font-family: 'lanord-semilight';
   src: url('./lanord/LaNord-SemiLight.eot');
@@ -9,12 +6,10 @@
   src: url('./lanord/LaNord-SemiLight.woff') format('woff')
 }
 
-
 /* the only color used */
 :root {
   --main-color: #0000EE;
 }
-
 
 body{
   margin:0;
@@ -59,7 +54,6 @@ video.video {
   opacity:0;
 }
 
-/* universal tags */
 h1 {
   font-family: 'lanord-semilight', sans-serif;
   font-size: 36px;
@@ -111,8 +105,6 @@ a:hover:before {
   
 }
 
-/* home */
-
 .grab {
   cursor: -webkit-grab; cursor: grab;
 }
@@ -120,7 +112,6 @@ a:hover:before {
 .grab:active {
   cursor: -webkit-grabbing; cursor: grabbing;
 }
-
 
 .stick{
   position: -webkit-sticky; /* Safari */
@@ -130,29 +121,21 @@ a:hover:before {
   margin-bottom: 40px;
 }
 
-.margin40vw{
-  outline: 1px solid red;
-  margin-bottom: 10vh;
-}
-/* projects */
-
-img{
-  /* height: 100%;
-  width: 100%; */
-  cursor: auto;
+section {
+  margin-bottom: 50px;
 }
 
-
-/* motion */
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
+.description{
+  display: flex;
 }
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
+.column1{
+  flex: 3;
+  margin-right: 15px;
+}
+
+.column2{
+  flex: 1;
+  text-align: right;
+  margin-left: 15px;
 }

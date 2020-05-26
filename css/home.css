@@ -19,23 +19,14 @@
     background: url(../assets/gif/kimmykonglarge.gif);
   }
   
-  .digital:hover:before{
+  /* .motion:hover:before{
     content: '';
     position: fixed;
     display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: -1;
     background: url(../assets/gif/kimmykonglarge.gif);
-  }
-  
-  .motion:hover:before{
-    content: '';
-    position: fixed;
-    display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
-    z-index: -1;
-    background: url(../assets/gif/kimmykonglarge.gif);
-  }
+  } */
   
   .sva:hover:before{
     content: '';
@@ -47,7 +38,7 @@
     background-size: auto auto;
   }
   
-  .email:hover:before{
+  /* .email:hover:before{
     content: '';
     position: fixed;
     display: block;
@@ -66,5 +57,5 @@
     background-repeat: no-repeat;
     background-position: center center;
 
-  }
+  } */
   
