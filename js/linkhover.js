@@ -1,11 +1,13 @@
 var instaVidHtml = document.querySelector("#insta-video");
 var emailVidHtml = document.querySelector("#email-video");
 var motionVidHtml = document.querySelector("#motion-video");
+var projectsVidHtml = document.querySelector("#projects-video");
 // var videoAssets = ['assets/home/insta.mp4', 'assets/home/email.mp4'];
 
 var instaHTML = document.querySelector('.insta');
 var emailHTML = document.querySelector('.email');
 var motionHTML = document.querySelector('.motion');
+var projectsHTML = document.querySelector('.projects');
 
 instaHTML.addEventListener("mouseenter", function (event) {
   instaVidHtml.style.opacity = 1;
@@ -30,4 +32,13 @@ motionHTML.addEventListener("mouseenter", function (event) {
 motionHTML.addEventListener("mouseout", function (event) {
   motionVidHtml.style.opacity = 0;
 });
+
+projectsHTML.addEventListener("mouseenter", function (event) {
+  projectsVidHtml.style.opacity = 1;
+});
+
+projectsHTML.addEventListener("mouseout", function (event) {
+  projectsVidHtml.style.opacity = 0;
+});
+
 
