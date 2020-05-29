@@ -26,18 +26,19 @@ body{
 
 .main-container{
   margin:0 15% 0 15%;
+  
 }
 
 /* If Mobile we want to change styles */
 @media only screen and (max-width: 600px) {
   .main-container{
-    margin:0px 20px 0 20px;
+    margin:0px 10px 0 10px;
   }
 }
 
-.content-container{
+/* .content-container{
   margin-top: 40px;
-}
+} */
 
 .section-container{
   width: 100%;
@@ -58,9 +59,13 @@ h1 {
   font-family: 'lanord-semilight', sans-serif;
   font-size: 36px;
   line-height: 1.2;
-  font-weight:normal;
+  font-weight: normal;
   margin: 0;
-  
+}
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 30px;
+  }
 }
 
 p {
@@ -89,6 +94,12 @@ a:visited {
   border-radius: 36px;
   transition: all .25s;
   transition-timing-function: ease-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .boxlink{
+    font-size: 30px;
+  }
 }
 
 .boxlink:hover{
