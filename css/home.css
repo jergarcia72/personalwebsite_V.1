@@ -7,7 +7,7 @@
     position: absolute;
     bottom: 0; right: 0; 
     z-index: -1;
-    background: url(../assets/home/portrait.png) no-repeat center center fixed;
+    background: url(../assets/home/portrait.jpg) no-repeat center center fixed;
   }
   
   /* .branding:hover:before{
