@@ -2,7 +2,6 @@
     margin: 5px 0 10px 0;
     position: relative;
     overflow: hidden;
-    
   }
   
   .gallery-slide{
@@ -15,7 +14,6 @@
     height:auto;
     min-height:200px;
     max-height:1000px;
-
   }
 
   .gallery-image {
@@ -26,21 +24,52 @@
   .next{
     position: absolute;
     height: 99%;
-    width: 30%;
+    width: 50%;
     top: 0px;
     right: 0px; 
-    cursor: url(../assets/next.png), pointer;
+    cursor: url(../assets/img/next.png), pointer;
+  }
+
+  .nextmobile{
+    display:none;
+  }
+
+  /* If Mobile we want to change styles */
+  @media only screen and (max-width: 600px) {
+    .nextmobile{
+      display: inline;
+      position: absolute;
+      right: 15px;
+      top: 45%;
+      mix-blend-mode: difference;
+
+    }
   }
   
   .prev{
     position: absolute;
     height: 99%;
-    width: 30%;
+    width: 50%;
     top: 0px;
     left: 0px; 
-    cursor: url(../assets/prev.png), pointer;
+    cursor: url(../assets/img/prev.png), pointer;
   }
-  
+
+  .prevmobile{
+    display:none;
+  }
+
+  /* If Mobile we want to change styles */
+  @media only screen and (max-width: 600px) {
+    .prevmobile{
+      display: inline;
+      position: absolute;
+      left: 15px;
+      top: 45%;
+      mix-blend-mode: difference;
+    }
+    
+  }
  
   .jeremy:hover:before{
     content: '';
@@ -57,4 +86,5 @@
     cursor: auto;
   }
   
+
 
