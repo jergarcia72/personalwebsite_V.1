@@ -25,7 +25,9 @@ body{
 }
 
 .main-container{
-  margin:0 15% 0 15%;
+  /* margin:0 15% 0 15%; */
+  max-width: 850px;
+  margin: auto;
   
 }
 
@@ -35,10 +37,6 @@ body{
     margin:0px 10px 0 10px;
   }
 }
-
-/* .content-container{
-  margin-top: 40px;
-} */
 
 .section-container{
   width: 100%;
@@ -61,6 +59,7 @@ h1 {
   line-height: 1.2;
   font-weight: normal;
   margin: 0;
+
 }
 @media only screen and (max-width: 600px) {
   h1{
@@ -166,6 +165,14 @@ section {
 /* If Mobile we want to change styles */
 @media only screen and (max-width: 600px) {
   .column2{
+    display: none;
+  }
+}
+
+
+/* If Mobile we want to change styles */
+@media only screen and (max-width: 600px) {
+  .mobileremove{
     display: none;
   }
 }
