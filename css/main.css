@@ -158,8 +158,8 @@ section {
 
 .column2{
   flex: 1;
-  text-align: right;
-  margin-left: 15px;
+  text-align: left;
+  margin-left: 100px;
 }
 
 /* If Mobile we want to change styles */
