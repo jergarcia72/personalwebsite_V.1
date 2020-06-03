@@ -8,10 +8,11 @@
     bottom: 0; right: 0; 
     z-index: -1;
     background: url(../assets/home/portrait.jpg) no-repeat center center fixed;
+    background-color: #fff;
   }
   
   
-  .sva:hover:before{
+  /* .sva:hover:before{
     content: '';
     position: fixed;
     display: block;
@@ -19,7 +20,7 @@
     z-index: -1;
     background: url(../assets/home/sva-logo.jpg);
     background-size: auto auto;
-  }
+  } */
   
 
 
