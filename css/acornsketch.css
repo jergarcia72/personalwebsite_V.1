@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'lanord-semilight';
+    src: url('./lanord/LaNord-SemiLight.eot');
+    src: url('./lanord/LaNord-SemiLight.eot?#iefix') format('embedded-opentype');
+    src: url('./lanord/LaNord-SemiLight.woff2') format('woff2');
+    src: url('./lanord/LaNord-SemiLight.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'avenirnext';
+    src: url("./AvenirNext/AvenirNextLTPro-Bold.otf") format("opentype");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    background-color: #74c948;
+}
+
+.sketch{
+    width:auto;
+    height: 500px;
+    z-index: -1;
+
+    
+}
+
+#sketch-holder{
+margin: auto; 
+}
+
+.linktowebsite {
+    font-family: 'lanord-semilight', sans-serif;
+    position: absolute;
+    bottom: 2%;
+    text-align: center;
+    z-index: 1;
+}
+
+a:link {
+    color: #fff;
+}
+
+a:visited {
+color: #fff;
+}
