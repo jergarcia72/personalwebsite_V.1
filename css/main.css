@@ -3,7 +3,16 @@
   src: url('./lanord/LaNord-SemiLight.eot');
   src: url('./lanord/LaNord-SemiLight.eot?#iefix') format('embedded-opentype');
   src: url('./lanord/LaNord-SemiLight.woff2') format('woff2');
-  src: url('./lanord/LaNord-SemiLight.woff') format('woff')
+  src: url('./lanord/LaNord-SemiLight.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'lanord-bold';
+  src: url('./lanord/LaNord-Bold.eot');
+  src: url('./lanord/LaNord-Bold.eot?#iefix') format('embedded-opentype');
+  src: url('./lanord/LaNord-Bold.woff2') format('woff2');
+  src: url('./lanord/LaNord-Bold.woff') format('woff')
 }
 
 /* the only color used */
@@ -71,6 +80,13 @@ p {
   margin: 0;
   font-family: 'lanord-semilight', sans-serif;
   font-size: 18px;
+}
+
+strong {
+  font-family: 'lanord-bold';
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
 }
 
 a:hover:before {
@@ -161,7 +177,7 @@ a:visited {
 }
 
 section {
-  padding: 25px 0 25px 0;
+  padding: 30px 0 30px 0;
 }
 
 .description{
