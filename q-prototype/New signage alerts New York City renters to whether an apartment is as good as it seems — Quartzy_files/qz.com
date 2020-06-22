@@ -1,0 +1,1 @@
+PARSELY.pInit({"apikey":"qz.com","bundle":"/code/ptrack-v1.1.1.js","customizations":null,"track_third_party_cookies":true,"track_ip_addresses":true,"settings":{"tracker":true,"widget":false,"debug":false},"uuid":"37301e8c-b026-4d0b-8ee9-ad6be5ef7c0b","network_uuid":"48380ca3-9824-49d5-b08a-dde453da6cf2","apikey_uuid":"37301e8c-b026-4d0b-8ee9-ad6be5ef7c0b"});
