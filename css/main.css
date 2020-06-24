@@ -15,6 +15,14 @@
   src: url('./lanord/LaNord-Bold.woff') format('woff')
 }
 
+@font-face {
+  font-family: 'lanord-medium';
+  src: url('./lanord/LaNord-Medium.eot');
+  src: url('./lanord/LaNord-Medium.eot?#iefix') format('embedded-opentype');
+  src: url('./lanord/LaNord-Medium.woff2') format('woff2');
+  src: url('./lanord/LaNord-Medium.woff') format('woff')
+}
+
 /* the only color used */
 :root {
   --main-color: #0000EE;
@@ -23,18 +31,23 @@
 body{
   margin:0;
   height: 100vh;
-  /* dont select my text or else */
-  -webkit-user-select: none; /* Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
   min-height: 100vh;
   background-color: #f2f2f2;
+}
 
+body.white{
+  background-color: #fff;
+}
+
+body.noselect {
+    /* dont select my text or else */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 .main-container{
-  /* margin:0 15% 0 15%; */
   max-width: 850px;
   margin: auto;
   
@@ -68,7 +81,6 @@ h1 {
   line-height: 1.2;
   font-weight: normal;
   margin: 0;
-
 }
 @media only screen and (max-width: 600px) {
   h1{
@@ -76,8 +88,31 @@ h1 {
   }
 }
 
+h2 {
+  font-family: 'lanord-semilight', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 0 0 15px 0;
+}
+
+h3 {
+  font-family: 'lanord-medium', sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  margin: 45px 0 15px 0;
+}
+
+h4{
+  font-family: 'lanord-semilight';
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  margin: 15px 0 5px 0;
+}
+
 hr {
-  margin: 30px 0 30px 0;
+  /* margin: 30px 0 30px 0; */
 }
 
 p {
@@ -86,9 +121,21 @@ p {
   font-size: 18px;
 }
 
-strong {
-  font-family: 'lanord-bold';
+ol {
+  margin: 15px 65px 15px 30px;
+  font-family: 'lanord-semilight', sans-serif;
   font-size: 18px;
+}
+
+ul {
+  margin: 15px 65px 15px 30px;
+  font-family: 'lanord-semilight', sans-serif;
+  font-size: 18px;
+}
+
+strong {
+  font-family: 'lanord-medium';
+  font-size: 20px;
   font-weight: normal;
   font-style: normal;
 }
@@ -190,7 +237,6 @@ section {
 
 .column1{
   flex: 3;
-  margin-right: 15px;
 }
 
 /* If Mobile we want to change styles */
@@ -204,7 +250,7 @@ section {
 .column2{
   flex: 1;
   text-align: left;
-  margin-left: 100px;
+  margin-left: 30px;
 }
 
 /* If Mobile we want to change styles */

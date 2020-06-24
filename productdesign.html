@@ -13,7 +13,7 @@
     </script>
 
     <meta charset="utf-8">
-    <title>jeremy's about page</title>
+    <title>jeremy's product design</title>
     <link rel="shortcut icon" type="image/png" href="assets/img/hand.png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,13 +25,13 @@
     </head>
 
 
-    <body>
+    <body class="white">
 
         <!-- Videos for hover links -->
         <div class="mobileremove">
 
             <video id="about-video" class="video" muted autoplay loop>
-            <source src="assets/home/about.mp4" type="video/mp4">
+                <source src="assets/home/about.mp4" type="video/mp4">
             </video>
 
         </div>
@@ -70,28 +70,147 @@
             <div id="project1">
                 <hr>
                 <section>
-                    <h1>
-                        Hey Neighbor UI
-                    </h1>
-                    <p>
-                        This is a little description and what it means. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a rutrum tellus. 
-                        In in turpis rutrum, venenatis augue id, aliquam arcu.
-                    </p>
+                    <h2>
+                        Hey Neighbor
+                    </h2>
+
+                    <video class="resize" muted autoplay loop>
+                        <source src="assets/product/1/hn_lp.mov" type="video/mp4">
+                    </video>
     
-                    <img src="assets/projects/04/07.jpg"class="gallery-image" alt="SomeDesignWork">
-    
+                    <h3>
+                        What is Hey Neighbor?
+                    </h3>
+                    <div class="description">
+                        
+                        <p class="column1">
+                            People who live in New York City know how difficult it can be to find an apartment. With a city that is over 65% renters, high demand creates a seller's market, resulting in high costs and low quality. My personal experience moving to New York brought me to searching for a solution. Hey Neighbor is a digital platform that shares insider details about apartments, ensuring NYC renters find comfortable and safe living conditions. 
+                            <br>
+                            <br>
+                            This case study will describes the development and validation of the Hey Neighbor idea. To hear the story of my move-in and see how it led me to this project, watch this <a href="https://vimeo.com/414902640" target="_blank">presentation</a> on the project.
+                        </p>
+                        <p class="column2">
+                            <strong>Tools:</strong>
+                            <br>
+                            Illustrator, InDesign, Xd, After Effects and HTML.
+                            <br>
+                            <br>
+                            <strong>
+                                In this case study
+                            </strong>
+                            <br>
+                            Prototype of web article and landing page, interviews, personas, and a journey map.
+                        </p>
+                    </div>
+                    <h3>
+                        Research and Understanding
+                    </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a rutrum tellus. 
-                        In in turpis rutrum, venenatis augue id, aliquam arcu. Donec ante magna, ullamcorper 
-                        egestas arcu id, tincidunt tristique erat. Duis ipsum odio, dictum non consequat sed, 
-                        imperdiet nec massa. Sed eu ex ipsum. Ut auctor euismod faucibus. Sed pretium risus at 
-                        velit ornare, ut posuere risus sodales. Vestibulum at porttitor est, sit amet finibus 
-                        quam. Maecenas mollis ante nisi, ut ultrices enim euismod a. Vivamus sagittis leo quis 
-                        pretium auctor. Sed vulputate, quam scelerisque accumsan venenatis, odio quam rhoncus 
-                        metus, mollis faucibus turpis nisl sit amet sapien. Mauris rhoncus auctor ligula. 
-                        Proin molestie ipsum urna, nec bibendum ipsum suscipit tristique. Nunc a porttitor sapien. 
-                        Duis non lobortis orci, pretium tempor velit.
+                        After talking with NYC tenants, I recognized the lack of information they had before committing to a new home. Is the super responsive? Will my neighbors party all hours of the night? Just how bad are the cockroaches? Can my landlord really raise the rent that much? The answers to these questions can't be easily found on the web (if at all), and landlords know it. Landlords and the city frequently take advantage of these information deficits and leave tenants to pick up the pieces.
+                        <br>
+                        The conversations lead me to ask:
+                        <br>
+                        <br>
+                        How might more information about specific apartments be provided to tenants before they negotiate and sign expensive contracts?
                     </p>
+                    <h4>
+                        Market Research:
+                    </h4>
+                    <p>
+                        I initially wanted to see what tools were already on the market for tenants seeking information on apartments. I noticed the websites I found relied on two types of data:
+                    </p>
+                    <ol>
+                        <li>Government-collected data (e.g., code violations or 311 complaints regarding a specific building).</li>
+                        <li>User-generated data (e.g., reviews connected to buildings).</li>
+                    </ol> 
+                    <p>
+                        What can we learn from what's already on the market?
+                    </p>
+                    <img src="assets/product/1/compdiagram.jpg"class="resize" alt="marketDiagram">
+                    <p>
+                        <a href="assets/product/1/compdiagram.jpg" target="_blank">Click to View Larger Version</a>
+                        <br>
+                        <br>
+                    </p>
+
+                    <h2>
+                        Based on research and personal experience with finding an apartment in NYC, I quickly realized that renters need a one-stop web tool that offers practical data and personal reviews.
+                    </h2>
+
+                    <h3>
+                        Creating and Testing the Prototype
+                    </h3>
+
+                    <p>
+                        I wanted to validate the hypothesis quickly without having to build the functionality of the tool out. With that goal in mind, I created a news article prototype that NYC tenants could quickly read. I edited the HTML on the tech news site Quartz to create a custom web article that could pass as legitimate tech news. 
+                        <br>
+                        <br>
+                        Included with the prototype is an article that featured a solution already on the market (Rentlogic) and compared it to my solution (Hey Neighbor). Rentlogic takes information directly from government sources to create a letter rating (similar to restaurant letter ratings), while Hey Neighbor provides two separate ratings—one based on government data and another on tenant reviews. 
+                        <br>
+                        <br>
+                    </p>
+
+                    <video class="resize" muted autoplay loop>
+                        <source src="assets/product/1/prototype - Vid.mov" type="video/mp4">
+                    </video>
+                    
+
+
+                    <p>
+                        You can read more about the differences of the services on the <a href="https://jergarcia.com/q-prototype/q-prototype.html" target="_blank">live prototyped article.</a> 
+                        <br>
+
+                        Along with this, I mocked up Hey Neighbor’s landing page to help describe the service further if a user clicked through the article to view the home page.
+                        <br>
+                        <br>
+                    </p>
+                    
+                    <p>
+                        I then sat down with the potential user and told them they found this article shared on social media. I then asked them and read the full article. I observed if what they would do while reading the article. Some users would click through to one of the service's homepages, but more often we would discuss what their impressions where about what they read. 
+                        <br>
+                        <br>
+                        If they stayed on the article I proceeded to ask a number of questions:
+                    </p>
+                    <ul>
+                        <li>Are these services you would use? Why?</li>
+                        <li>What kind of value do you see each of these companies bringing?</li>
+                        <li>Would you prefer one over the other? Why?</li>
+                    </ul> 
+
+                    <div class="flexforcolumns">
+                        <div class="lefthalf">
+                            <img src="assets/product/1/hn.png"class="resize" alt="marketDiagram">
+                            <div class="caption">Hey Neighbor Prototype Landing Page
+                                <a href="https://xd.adobe.com/view/3e04dfa2-06cd-495a-5c52-d37b17274350-4835/?fullscreen" target="_blank">(View)</a>
+                            </div>
+
+                        </div>
+
+                        <div class="righthalf">
+                            
+                            <img src="assets/product/1/rentlogic.png"class="resize" alt="marketDiagram">
+                            <div class="caption">Rentlogic's Landing Page</div>
+                            <!-- <figcaption class="screen">Rentlogic's Landing Page</figcaption> -->
+                            
+
+                        </div>
+
+                    </div>
+
+                    <p>
+                        After a user viewed Hey Neighbor or Rentlogic’s website I would ask:
+                    </p>
+
+                    <ul>
+                        <li>How do you feel that the website is delivering on promises you read</li>
+                        <li>How do you feel that the website is delivering on promises you read about <br> in the article?</li>
+                        <li>After seeing both, which service would you prefer?</li>
+                    </ul> 
+                    
+                    
+
+
+
     
                     
     
@@ -132,7 +251,7 @@
                     <span class="about"><a class="boxlink onpage" href="#list">Back to projects ↑</a></span>
     
                     
-    
+    <!--  -->
                 </section>
 
 

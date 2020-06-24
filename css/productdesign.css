@@ -1,7 +1,42 @@
-img {
-    margin: 15px 0 15px 0;
-}
 
 .projectlist {
     height: 65vh;
+}
+
+.flexforcolumns{
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+.lefthalf{
+    flex: 2;
+    margin-right: 15px;
+}
+
+.righthalf{
+    flex: 2;
+    margin-left: 15px;
+}
+
+.resize{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+figcaption {
+    font-family: 'lanord-semilight', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+figcaption.screen{
+    margin: -10px 0 0 0;
+}
+
+.caption {
+    font-family: 'lanord-semilight', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin: -10px 0 0 0;
 }
