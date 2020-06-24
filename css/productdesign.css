@@ -5,7 +5,7 @@
 
 .flexforcolumns{
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
 .lefthalf{
@@ -39,4 +39,14 @@ figcaption.screen{
     font-size: 12px;
     text-align: center;
     margin: -10px 0 0 0;
+}
+
+.commentbox {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+img.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
