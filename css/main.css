@@ -108,7 +108,7 @@ h4{
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
-  margin: 15px 0 5px 0;
+  margin: 15px 0 0 0;
 }
 
 h5{
@@ -116,8 +116,6 @@ h5{
   font-size: 28px;
   font-weight: normal;
   font-style: normal;
- 
-
 }
 
 hr {
@@ -133,13 +131,13 @@ p {
 }
 
 ol {
-  margin: 15px 65px 15px 30px;
+  margin: 5px 65px 15px 30px;
   font-family: 'lanord-semilight', sans-serif;
   font-size: 18px;
 }
 
 ul {
-  margin: 15px 65px 15px 30px;
+  margin: 5px 65px 15px 30px;
   font-family: 'lanord-semilight', sans-serif;
   font-size: 18px;
 }
