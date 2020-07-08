@@ -6,14 +6,16 @@
 .flexforcolumns{
     display: flex;
     margin-bottom: 40px;
-  }
+}
 
 .lefthalf{
     flex: 2;
+    margin-right: 5px;
 }
 
 .righthalf{
     flex: 2;
+    margin-left: 5px;
 }
 
 .resize{
