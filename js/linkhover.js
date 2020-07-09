@@ -3,6 +3,7 @@ var instaVidHtml = document.querySelector("#insta-video");
 var emailVidHtml = document.querySelector("#email-video");
 var motionVidHtml = document.querySelector("#motion-video");
 var projectsVidHtml = document.querySelector("#projects-video");
+var dpVidHtml = document.querySelector("#dp-video");
 
 
 
@@ -11,6 +12,7 @@ var instaHTML = document.querySelector('.insta');
 var emailHTML = document.querySelector('.email');
 var motionHTML = document.querySelector('.motion');
 var projectsHTML = document.querySelector('.projects');
+var dpHTML = document.querySelector('.dp');
 
 
 
@@ -52,6 +54,14 @@ projectsHTML.addEventListener("mouseenter", function (event) {
 
 projectsHTML.addEventListener("mouseout", function (event) {
   projectsVidHtml.style.opacity = 0;
+});
+
+dpHTML.addEventListener("mouseenter", function (event) {
+  dpVidHtml.style.opacity = 1;
+});
+
+dpHTML.addEventListener("mouseout", function (event) {
+  dpVidHtml.style.opacity = 0;
 });
 
 
