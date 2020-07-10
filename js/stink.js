@@ -9,16 +9,16 @@ function setup() {
 }
 
 function draw() {
-  //background(0);
-  pg.background(0);
+  background('#20c4f4');
+  pg.background('#20c4f4');
   pg.fill(255);
   pg.textFont("lanord-bold");
-  pg.textSize(canvasSize / 5);
+  pg.textSize(canvasSize / 6);
   pg.push();
   pg.translate(grSize / 2, grSize / 2);
   pg.textAlign(LEFT, CENTER);
   pg.textLeading(canvasSize / 6.6 - 10);
-  pg.text("hello stink studios", -canvasSize / 3.5, -canvasSize / 5.25, 0);
+  pg.text("hello awardco", -canvasSize / 3.5, -canvasSize / 5.25, 0);
   pg.pop();
 
   let tilesX = 30;
