@@ -1,98 +1,95 @@
 .gallery-container{
-    margin: 5px 0 10px 0;
-    position: relative;
-    overflow: hidden;
-  }
+  margin: 5px 0 10px 0;
+  position: relative;
+  overflow: hidden;
+}
 
-  /* If Mobile we want to change styles */
-  @media only screen and (max-width: 600px) {
-    .gallery-container{
-      margin-right: -10px;
-      margin-left: -10px;
-    }
+/* If Mobile we want to change styles */
+@media only screen and (max-width: 600px) {
+  .gallery-container{
+    margin-right: -10px;
+    margin-left: -10px;
   }
-  
-  .gallery-slide{
-    width: 100%;
-  }
+}
 
-  .gallery-image-container {
-    display:inline-block;
-    /* flex; */
-    height:auto;
-    min-height:200px;
-    max-height:1000px;
-  }
+.gallery-slide{
+  width: 100%;
+}
 
-  .gallery-image {
-    width:100%;
-    object-fit: fill;
-  }
-  
-  .next{
-    position: absolute;
-    height: 99%;
-    width: 50%;
-    top: 0px;
-    right: 0px; 
-    cursor: url(../assets/img/hand-right.png), pointer;
-  }
+.gallery-image-container {
+  display:inline-block;
+  /* flex; */
+  height:auto;
+  min-height:200px;
+  max-height:1000px;
+}
 
+.gallery-image {
+  width:100%;
+  object-fit: fill;
+}
+
+.next{
+  position: absolute;
+  height: 99%;
+  width: 50%;
+  top: 0px;
+  right: 0px; 
+  cursor: url(../assets/img/hand-right.png), pointer;
+}
+
+.nextmobile{
+  display:none;
+}
+
+/* If Mobile we want to change styles */
+@media only screen and (max-width: 600px) {
   .nextmobile{
-    display:none;
-  }
-
-  /* If Mobile we want to change styles */
-  @media only screen and (max-width: 600px) {
-    .nextmobile{
-      display: inline;
-      position: absolute;
-      right: 15px;
-      top: 45%;
-      mix-blend-mode: difference;
-
-    }
-  }
-  
-  .prev{
+    display: inline;
     position: absolute;
-    height: 99%;
-    width: 50%;
-    top: 0px;
-    left: 0px; 
-    cursor: url(../assets/img/hand-left.png), pointer;
-  }
+    right: 15px;
+    top: 45%;
+    mix-blend-mode: difference;
 
+  }
+}
+
+.prev{
+  position: absolute;
+  height: 99%;
+  width: 50%;
+  top: 0px;
+  left: 0px; 
+  cursor: url(../assets/img/hand-left.png), pointer;
+}
+
+.prevmobile{
+  display:none;
+}
+
+/* If Mobile we want to change styles */
+@media only screen and (max-width: 600px) {
   .prevmobile{
-    display:none;
-  }
-
-  /* If Mobile we want to change styles */
-  @media only screen and (max-width: 600px) {
-    .prevmobile{
-      display: inline;
-      position: absolute;
-      left: 15px;
-      top: 45%;
-      mix-blend-mode: difference;
-    }
-    
-  }
- 
-  .jeremy:hover:before{
-    content: '';
-    height:100vh;
-    width: 100vw;
-    object-fit: cover;
+    display: inline;
     position: absolute;
-    bottom: 0; right: 0; 
-    z-index: -1;
-    background: url(../assets/home/portrait.png) no-repeat center center fixed;
-  }
-
-  img{
-    cursor: auto;
+    left: 15px;
+    top: 45%;
+    mix-blend-mode: difference;
   }
   
+}
 
+.jeremy:hover:before{
+  content: '';
+  height:100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0; right: 0; 
+  z-index: -1;
+  background: url(../assets/home/portrait.png) no-repeat center center fixed;
+}
 
+img{
+  cursor: auto;
+}
