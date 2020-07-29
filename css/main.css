@@ -240,36 +240,6 @@ section {
   padding: 30px 0 0 0;
 }
 
-.description{
-  display: flex;
-}
-
-.column1{
-  flex: 3;
-}
-
-/* If Mobile we want to change styles */
-@media only screen and (max-width: 600px) {
-  .column1{
-    flex: 1;
-    margin-right: 0px;
-  }
-}
-
-.column2{
-  flex: 1;
-  text-align: left;
-  margin-left: 30px;
-}
-
-/* If Mobile we want to change styles */
-@media only screen and (max-width: 600px) {
-  .column2{
-    display: none;
-  }
-}
-
-
 /* If Mobile we want to change styles */
 @media only screen and (max-width: 600px) {
   .mobileremove{
