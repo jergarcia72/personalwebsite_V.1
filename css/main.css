@@ -105,7 +105,7 @@ h3 {
 
 h4{
   font-family: 'lanord-medium';
-  font-size: 20px;
+  font-size: 24px;
   font-weight: normal;
   font-style: normal;
   margin: 15px 0 0 0;
@@ -127,19 +127,21 @@ hr {
 p {
   margin: 0;
   font-family: 'lanord-semilight', sans-serif;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 ol {
   margin: 5px 65px 15px 30px;
   font-family: 'lanord-semilight', sans-serif;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 ul {
   margin: 5px 65px 15px 30px;
   font-family: 'lanord-semilight', sans-serif;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 strong {
